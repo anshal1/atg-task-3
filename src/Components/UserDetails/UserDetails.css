@@ -1,0 +1,82 @@
+.main_user_details {
+  width: 25rem;
+  height: 35rem;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.users_details {
+  width: 80%;
+  margin: auto;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  opacity: 0;
+  transform: scale(0.9);
+  animation: show 400ms 1 ease forwards;
+}
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.user_img_username {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.user_img_username p {
+  color: white;
+  font-weight: 600;
+  font-size: 2rem;
+}
+.user_img_username img {
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: rgba(128, 128, 128, 0.2);
+}
+.bio {
+  width: 100%;
+  background-color: rgb(63, 136, 197);
+  padding: 10px;
+  border-radius: 3px;
+}
+.bio > p {
+  color: white;
+  font-weight: 500;
+}
+.names {
+  width: 100%;
+}
+.names label {
+  width: 100%;
+  line-height: 2rem;
+  color: white;
+  font-weight: 600;
+}
+.names label p {
+  width: 100%;
+  height: fit-content;
+  padding: 5px;
+  background-color: rgb(63, 136, 197);
+  color: white;
+  font-weight: 500;
+  border-radius: 3px;
+}
+#select_msg {
+  color: white;
+  font-weight: 900;
+}

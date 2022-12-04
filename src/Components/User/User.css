@@ -1,0 +1,107 @@
+.main_user_container {
+  width: 25rem;
+  height: 25rem;
+  overflow: auto;
+  text-align: center;
+}
+.main_user_container::-webkit-scrollbar {
+  display: none;
+}
+.heading {
+  width: 100%;
+  height: 2.4rem;
+  background-color: rgb(174, 243, 231);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+}
+.heading p {
+  font-size: 1.2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.userBox {
+  width: 100%;
+  height: 90%;
+  overflow: auto;
+}
+.user_holder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.userBox::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 6px;
+  margin-left: 10px;
+}
+.userBox::-webkit-scrollbar-track {
+  background-color: rgb(214, 255, 248);
+}
+.userBox::-webkit-scrollbar-thumb {
+  width: 8px;
+  height: 0.3rem;
+  background-color: rgba(4, 15, 15, 0.5);
+}
+.user_conatiner {
+  width: 100%;
+  height: 3.8rem;
+  background-color: rgb(63, 136, 197);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  opacity: 0;
+  transform: translateY(20px);
+  padding: 0px 1rem;
+  border-radius: 3px;
+  transition: all 100ms;
+  cursor: pointer;
+  margin: 15px 0px;
+  transition: all 200ms;
+  animation: show 500ms 1 ease forwards;
+  animation-delay: calc(var(--order) * 100ms);
+}
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.active {
+  background-color: rgb(37, 82, 119);
+}
+.user_conatiner:hover {
+  box-shadow: 0px 0px 12px 4px rgba(63, 136, 197, 0.6);
+}
+.user_holder > img {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
+  background-color: rgba(128, 128, 128, 0.5);
+  border-radius: 50%;
+  margin: 0px;
+}
+.name p {
+  color: white !important;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+#error_msg {
+  color: white;
+}
+.error {
+  color: white;
+  font-weight: 900;
+}

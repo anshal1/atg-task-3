@@ -5,6 +5,20 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(4, 15, 15);
+}
+
+@font-face {
+  font-family: myfont;
+  src: url("./WorkSans-VariableFont_wght.ttf");
+}
+
+*, *::before, *::after{
+  margin: 0px;
+  padding: 0px;
+  font-family: myfont;
+  box-sizing: border-box;
+  color: rgb(49, 54, 56);
 }
 
 code {

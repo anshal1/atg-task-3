@@ -1,0 +1,11 @@
+.main_home_container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(4, 15, 15);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2rem;
+  padding: 10px 5px;
+  flex-wrap: wrap;
+}
